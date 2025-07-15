@@ -33,6 +33,8 @@ PART 3: COMPARING VOIDINESS OF POPULATIONS - RESULTS FROM FURNISS ET. AL. 2025
 
 Both scripts are run twice - once for the redshift range 0.1 <= z < 0.4 and again for 0.4 <= z < 0.7. The code must be changed manually.
 
+PART 4: RESULTS FROM JACKSON ET. AL. 202X
+
    
 2. NOTE: there is a bug with the anchor bin in redshift_matched.py . If you get output "creating redshift_matched population..." and it sits there without showing a graph for more than 15 seconds, you need to try a different anchor bin because it gets stuck in a while-loop.
 
