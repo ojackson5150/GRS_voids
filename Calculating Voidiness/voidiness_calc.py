@@ -108,8 +108,8 @@ sdss_void = voidy_analysis(voids,'exported_dataFrames/z_ra_dec_filtered_sdss_sut
 sdss_void = sdss_void.drop_duplicates(subset=['RAdeg', 'DEdeg'], keep='first')
 four_lac = four_lac.drop_duplicates(subset=['RAdeg', 'DEdeg'], keep='first')
 
-four_lac[four_lac.z >=0.1].to_excel("exported_dataFrames/4lacdes_w_voidiness_dup_drop_above_z0_1.xlsx",index=False)
-sdss_void[sdss_void.z >= 0.1].to_excel("exported_dataFrames/sdssdes_w_voidiness_dup_drop_above_z0_1.xlsx", index=False)
+four_lac[four_lac.z >=0.1].to_excel("exported_dataFrames/4lacsutter_w_voidiness_dup_drop_above_z0_1.xlsx",index=False)
+sdss_void[sdss_void.z >= 0.1].to_excel("exported_dataFrames/sdsssutter_w_voidiness_dup_drop_above_z0_1.xlsx", index=False)
 
 print("**********************************\n")
 print("* Finished Voidiness Calculation *\n")
