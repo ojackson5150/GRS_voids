@@ -33,10 +33,23 @@ PART 3: COMPARING VOIDINESS OF POPULATIONS - RESULTS FROM FURNISS ET. AL. 2025
 
 Both scripts are run twice - once for the redshift range 0.1 <= z < 0.4 and again for 0.4 <= z < 0.7. The code must be changed manually.
 
+NOTE: there is a bug with the anchor bin in redshift_matched.py . If you get output "creating redshift_matched population..." and it sits there without showing a graph for more than 15 seconds, you need to try a different anchor bin because it gets stuck in a while-loop.
+
 PART 4: RESULTS FROM JACKSON ET. AL. 202X
 
+This part follows the order in the associated publication and refers to the appropriate Jupyter Notebook. 
+
+1. full_void_mpc.ipynb - calculating the full intersecting void distance in Mpc and performing KS test to compare the distribution of full void distance for 4LAC + SDSS qso
+2. blac_analysis.ipynb - changing the redshift binning and looking at how the difference in voidiness distributions changes for BL Lac sources, also has code for creating mock BL Lac populations to see if decrease in significance at higher redshifts is due to a decrease in number of sources
+4. blac_analysis.ipynb - IGMF cascade-emission flux adjustment tests (also see additional files in threshold_info folder)
+5. tev_analysis - looking at EBL density, doing KS test on just TVE flagged sources + updating 4LAC TEV flags, and looking at how voidiness is correlated to luminosity, PL index, and Variability index for 6 total populations [All 4lac sources, non-variable 4lac sources, tev sources, non-variable tev sources, sources in voids, sources in voids z>= 0.4]
+6. in_voids.ipynb - local emission environment, first determines which sources are in voids and then does a variety of comparisons and KS statistics comparing different populations (in void to in void, in void to total, out of void to out of void, etc.)
+7. resample_invoids.ipynb - creating mock populations to see if results of KS test have real significance
+
+
+
    
-2. NOTE: there is a bug with the anchor bin in redshift_matched.py . If you get output "creating redshift_matched population..." and it sits there without showing a graph for more than 15 seconds, you need to try a different anchor bin because it gets stuck in a while-loop.
+
 
    
 
