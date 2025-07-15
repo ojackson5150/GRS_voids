@@ -1,4 +1,7 @@
-"""This holds the voidiness analysis seperate from the jupyter notebooks"""
+"""
+@author: Josepf Amador
+
+This holds the voidiness analysis seperate from the jupyter notebooks"""
 from custom_functions import *
 import pandas as pd
 
