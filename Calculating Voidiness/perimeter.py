@@ -1,4 +1,7 @@
-"""To determine a 2D footprint of the cosmic voids from the Sutter Catalog.
+"""
+@author: Josepf Amador
+
+To determine a 2D footprint of the cosmic voids from the Sutter Catalog.
 
 Creates footprint_points_sutter.xlsx with the datapoints defining the edge of the void footprint.
 """
