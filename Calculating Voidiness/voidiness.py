@@ -154,7 +154,7 @@ def voidy_analysis(voids_data_fn, cel_data_fn, indexed=True):
     # assert isinstance(cel_obj, pd.DataFrame), "Pass string address to celestial_obj excel, or pass the dataframe"
     intersect_data = pre_voidy_calc(voids, cel_obj)
     #print(intersect_data[0]['intervals'])
-    return calc_master_voidiness(intersect_data, cel_obj), intersect_data
+    return calc_master_voidiness(intersect_data, cel_obj)#, intersect_data
 
 
 def main():
