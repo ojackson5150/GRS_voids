@@ -1,4 +1,7 @@
-"""The purpose of this script is to hold functions used to generate random 
+
+"""
+@author: Josepf Amador
+The purpose of this script is to hold functions used to generate random 
 SkyCoordsin the galactic plane and measure the distances between all possible sources"""
 
 import numpy as np
