@@ -123,7 +123,7 @@ for i in range(nbins):
 
 #plt.hist(median,bins=nbins,density=True, fill=False,histtype='step',color='b')
 binstep = (bins[0] + bins[1])
-plt.plot(bins[:-1]+binstep/2, median, color="0", ds="steps-mid", label="median z-matched DES samples")
+plt.plot(bins[:-1]+binstep/2, median, color="0", ds="steps-mid", label="median z-matched Sutter")
 plt.plot(bins[:-1]+binstep/2, Onesigma_low, color="0.5", ds="steps-mid",label="1 sigma")
 plt.plot(bins[:-1]+binstep/2, Onesigma_up, color="0.5", ds="steps-mid")
 plt.plot(bins[:-1]+binstep/2, Twosigma_low, color="0.8", ds="steps-mid",label="2 sigma")
@@ -131,14 +131,14 @@ plt.plot(bins[:-1]+binstep/2, Twosigma_up, color="0.8", ds="steps-mid")
 plt.xlabel(r'Voidiness')
 plt.ylabel(r'CDF')
 plt.legend(loc="upper left")
-plt.title(r'$0.4 \leq z < 0.8$', fontsize = 14)
+plt.title(r'$0.4 \leq z < 0.7$', fontsize = 14)
 plt.show()
 
 print("Mean SDSS Voidiness:", np.mean(Z_matched_Voidiness_array))
-print("Mean SDSS Error:", np.std(Z_matched_Voidiness_array))
+
 print("Mean Fermi Voidiness:", np.mean(Voidiness))
-print("Mean Fermi Error:", np.std(Voidiness))
-print("Mean Fermi Error 2:", np.sqrt(sum((x - np.mean(Voidiness))**2 for x in Voidiness) / len(Voidiness)))
+
+
 
 
 #remove 10 sources at random of the 4lac to check how it affects the p-values
