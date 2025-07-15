@@ -51,7 +51,7 @@ def filter_by_z_ra_dec(data_df, voids, cmvd_add = True, footprint_points_fn = "f
 
     if cmvd_add:
         data_df = add_cmvd(data_df)
-    data_df = filter_by_footprint(data_df, footprint_points_fn)
+    data_df = filter_by_footprint(data_df, footprint_points_fn, voids)
     return data_df
 
 print('Filtering 4LAC sources within footprint: Using \'FINALCorrectedRedshifts.xlsx\'.')
