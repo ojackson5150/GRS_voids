@@ -30,6 +30,10 @@ We now have the voidiness of all the sources.
 PART 3: COMPARING VOIDINESS OF POPULATIONS - RESULTS FROM FURNISS ET. AL. 2025
 
 1. Running redshift_matched.py and Void_KS_z-matched.py to reproduce results from Furniss et. al. (2025). Requires the 4lac and SDSS qso files with the calculated voidiness. Redshift_matched.py creates and saves a fits file into exported_dataFrames with the redshift matched samples of SDSS Qso sources, which is a required input into Void_KS_z-matched.py.
+
+Both scripts are run twice - once for the redshift range 0.1 <= z < 0.4 and again for 0.4 <= z < 0.7. The code must be changed manually.
+
+   
 2. NOTE: there is a bug with the anchor bin in redshift_matched.py . If you get output "creating redshift_matched population..." and it sits there without showing a graph for more than 15 seconds, you need to try a different anchor bin because it gets stuck in a while-loop.
 
    
